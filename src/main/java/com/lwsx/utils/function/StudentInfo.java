@@ -20,6 +20,10 @@ public class StudentInfo implements Comparable<StudentInfo> {
     //出生日期
     private LocalDate birthday;
 
+    public StudentInfo(){
+
+    }
+
     public StudentInfo(String name, Boolean gender, Integer age, Double height, LocalDate birthday) {
         this.name = name;
         this.gender = gender;
