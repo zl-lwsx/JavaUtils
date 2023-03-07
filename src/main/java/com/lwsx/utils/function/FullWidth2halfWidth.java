@@ -1,12 +1,20 @@
 package com.lwsx.utils.function;
 
+import java.io.UnsupportedEncodingException;
+
 public class FullWidth2halfWidth {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
         System.out.println(fullWidth2halfWidth("｀１２３４５６７８９０－＝［］＼＇；／．，＜＞？＂：｝｛｜～＠！＃＄％＾＆＊（）＿＿＿＿＿＋"));
         System.out.println(fullWidth2halfWidth("ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ"));
         System.out.println(fullWidth2halfWidth("你好啊。花飘万家雪，；好的；"));
         System.out.println("ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ".getBytes().length);
         System.out.println("abcdefghijklmnopqrstuvwxyz".getBytes().length);
+//        String s = "ａｂ";
+//        System.out.println(s.length());//2
+//        System.out.println(s.getBytes("GBK").length);//4
+//        System.out.println(s.getBytes("UTF-8").length);//6
+//        System.out.println(s.getBytes("UTF-16").length);//6
+//        System.out.println(s.getBytes("ISO8859-1").length);//2
     }
 
     /**
