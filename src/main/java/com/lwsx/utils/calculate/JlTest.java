@@ -1,6 +1,5 @@
 package com.lwsx.utils.calculate;
 
-import org.junit.Test;
 
 public class JlTest {
     //    Sort below string with the order input by user
@@ -25,7 +24,6 @@ public class JlTest {
         return stringBuilder.toString();
     }
 
-    @Test
     public void testMy() {
         String orderString = "abcd";
         System.out.println(test(orderString));

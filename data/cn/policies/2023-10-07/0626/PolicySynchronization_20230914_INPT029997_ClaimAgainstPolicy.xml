@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PolicySynchronizationProcess xmlns="http://www.acord.org/schema/data/draft/ReusableDataComponents/1">
+    <MessageHeader>
+        <ACORDStandardVersionCode>AML_1_2_0</ACORDStandardVersionCode>
+        <MessageId>856401b8-3166-c5fd-a5ca-a842c3ec28fa</MessageId>
+        <CorrelationId>b8dfc1c1-202f-03c2-d853-3a387eb75ecf</CorrelationId>
+        <MessageDateTime>2023-06-13T09:38:52.528</MessageDateTime>
+        <Sender key="PrudentialInd">
+            <RoleCode>Insurer</RoleCode>
+            <OrganizationReferences>
+                <OrganizationName>
+                    <FullName>ICICI Prudential Life Insurance Company Ltd</FullName>
+                </OrganizationName>
+            </OrganizationReferences>
+        </Sender>
+        <Receiver key="SCBIND">
+            <RoleCode>Broker</RoleCode>
+            <OrganizationReferences>
+                <OrganizationName>
+                    <FullName>SCB</FullName>
+                </OrganizationName>
+            </OrganizationReferences>
+        </Receiver>
+        <MessageDocumentCount>1</MessageDocumentCount>
+        <MessageSubmissionTypeCode>PolicySynchronization</MessageSubmissionTypeCode>
+    </MessageHeader>
+    <PolicySynchronization>
+        <Address key="OwnerAddress">
+            <FullAddressDescription>A/201 PRATIK CHS NR SENT,AIROLI S.O THANE,JOSEPH CHURCH SECTOR 10,THANE,400708,IN</FullAddressDescription>
+            <LineOne>A/201 PRATIK CHS NR SENT</LineOne>
+            <LineOneDetails>
+                <StreetName>AIROLI S.O THANE</StreetName>
+                <UnitNumber>A/201 PRATIK CHS NR SENT</UnitNumber>
+            </LineOneDetails>
+            <LineTwo>JOSEPH CHURCH SECTOR 10</LineTwo>
+            <CityName>THANE</CityName>
+            <PostalCode>400708</PostalCode>
+            <CountryCode>IN</CountryCode>
+            <CountryName>India</CountryName>
+        </Address>
+        <Person key="OwnerPerson">
+            <ExternalIdentifier>
+                <TypeCode>NRIC</TypeCode>
+                <Id>01090773S0SU4x</Id>
+                <IdentifierDescription>NRICNumber</IdentifierDescription>
+            </ExternalIdentifier>
+            <PersonName>
+                <FullName>PRATHAMESH SHRIRAM SAWANT</FullName>
+                <Surname>SHRIRAM SAWANT</Surname>
+                <GivenName>PRATHAMESH</GivenName>
+                <PersonTitlePrefix>Mr</PersonTitlePrefix>
+            </PersonName>
+            <PersonCommunication>
+                <Telephone key="HomeLandLine">
+                    <TypeCode>Wired</TypeCode>
+                    <PhoneNumber>+0-0-9920911165</PhoneNumber>
+                </Telephone>
+                <Email key="PersonalEmail1">
+                    <PrimaryIndicator>true</PrimaryIndicator>
+                    <EmailAddress>PSSAWANT2003@YAHOO.CO.IN</EmailAddress>
+                </Email>
+                <MailingAddress>
+                    <AddressReferences addressReference="OwnerAddress"/>
+                </MailingAddress>
+                <LegalAddress>
+                    <AddressReferences addressReference="OwnerAddress"/>
+                </LegalAddress>
+            </PersonCommunication>
+            <GenderCode>Male</GenderCode>
+            <MaritalStatusCode>Married</MaritalStatusCode>
+            <BirthDate>1973-07-09</BirthDate>
+            <NationalityCode>IN</NationalityCode>
+        </Person>
+        <Organization key="InsurerOrganization">
+            <ExternalIdentifier>
+                <TypeCode>OtherId</TypeCode>
+                <Id>105</Id>
+                <IdentifierDescription>InsurerCompanyCode</IdentifierDescription>
+            </ExternalIdentifier>
+            <OrganizationName>
+                <FullName>ICICI Prudential Life Insurance Company Ltd</FullName>
+            </OrganizationName>
+        </Organization>
+        <Organization key="ProducerOrganization">
+            <OrganizationName>
+                <FullName>SCB</FullName>
+            </OrganizationName>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>1615137</Id>
+                <IdentifierDescription>ReferralID</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>1615137</Id>
+                <IdentifierDescription>RelationshipManagerID</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>1615137</Id>
+                <IdentifierDescription>ReferralAgentCode</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Insurer</RoleCode>
+                <Id>01251151</Id>
+                <IdentifierDescription>AgencyCode</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>01251151</Id>
+                <IdentifierDescription>AgentUnitCode</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>01251151</Id>
+                <IdentifierDescription>AgentCode</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>SCB</Id>
+                <IdentifierDescription>AgentName</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Broker</RoleCode>
+                <Id>1615137</Id>
+                <IdentifierDescription>IntroducerID</IdentifierDescription>
+            </AssignedIdentifier>
+        </Organization>
+        <DocumentId>856401b8-3166-c5fd-a5ca-a842c3ec28fa</DocumentId>
+        <Policy>
+            <LineOfBusinessCode>InvestmentLinkedPlan</LineOfBusinessCode>
+            <AssignedIdentifier>
+                <RoleCode>Insurer</RoleCode>
+                <Id>INPT029997</Id>
+                <IdentifierDescription>PolicyNumber</IdentifierDescription>
+            </AssignedIdentifier>
+            <AssignedIdentifier>
+                <RoleCode>Insurer</RoleCode>
+                <Id>OS21659893</Id>
+                <IdentifierDescription>E-SubmissionNumber</IdentifierDescription>
+            </AssignedIdentifier>
+            <InsurancePeriod>
+                <StartDate>2023-06-12</StartDate>
+                <EndDate>2033-06-12</EndDate>
+                <PeriodDuration>P10Y</PeriodDuration>
+            </InsurancePeriod>
+            <EffectiveDate>2023-06-12</EffectiveDate>
+            <PolicyName>ICICI Pru Signature</PolicyName>
+            <ProductReferences>
+                <AssignedIdentifier>
+                    <RoleCode>Insurer</RoleCode>
+                    <Id>UW3</Id>
+                    <IdentifierDescription>ProductCode</IdentifierDescription>
+                </AssignedIdentifier>
+                <AssignedIdentifier>
+                    <RoleCode>Insurer</RoleCode>
+                    <Id>ICICI Pru Signature</Id>
+                    <IdentifierDescription>ProductName</IdentifierDescription>
+                </AssignedIdentifier>
+                <AssignedIdentifier>
+                    <RoleCode>Insurer</RoleCode>
+                    <Id>Unitlinked</Id>
+                    <IdentifierDescription>ProductCategory</IdentifierDescription>
+                </AssignedIdentifier>
+            </ProductReferences>
+            <PolicySection>
+                <PolicyInsurer>
+                    <Insurer key="PolicyInsurer">
+                        <OrganizationReferences organizationReference="InsurerOrganization"/>
+                    </Insurer>
+                </PolicyInsurer>
+                <PolicyProducer key="PolicyProducer">
+                    <RoleCode>Broker</RoleCode>
+                    <PlacingOfficeCode>Z222</PlacingOfficeCode>
+                    <PlacingOfficeName>SCB Retail</PlacingOfficeName>
+                    <ProducerReferences>
+                        <OrganizationReferences organizationReference="ProducerOrganization"/>
+                    </ProducerReferences>
+                </PolicyProducer>
+                <PolicyInterestedParty key="PolicyOwner1">
+                    <RoleCode>Owner</RoleCode>
+                    <InterestedPartyReferences>
+                        <PersonReferences personReference="OwnerPerson"/>
+                    </InterestedPartyReferences>
+                    <CustomerInformation>
+                        <CustomerCategoryCode>Individual</CustomerCategoryCode>
+                    </CustomerInformation>
+                </PolicyInterestedParty>
+                <SignedDate>2023-06-12</SignedDate>
+                <InitialRequestDate>2023-06-12</InitialRequestDate>
+                <CurrencyCode>INR</CurrencyCode>
+                <StatusCode>ClaimAgainstPolicy</StatusCode>
+                <StatusCodeDescription>Approved Death Claim</StatusCodeDescription>
+                <CountryCode>IN</CountryCode>
+                <PolicyBilling>
+                    <FrequencyCode>Monthly</FrequencyCode>
+                    <BillingPeriod>
+                        <EndDate>2023-07-12</EndDate>
+                    </BillingPeriod>
+                    <Payment>
+                        <TypeCode>Other</TypeCode>
+                        <PaymentAmount>0</PaymentAmount>
+                    </Payment>
+                </PolicyBilling>
+                <PolicyBackDatedIndicator>0</PolicyBackDatedIndicator>
+                <ApplicationId>INPT029997A</ApplicationId>
+                <SalesModelTypeCode>Direct</SalesModelTypeCode>
+                <PremiumPeriod>
+                    <PeriodDuration>P7Y</PeriodDuration>
+                </PremiumPeriod>
+            </PolicySection>
+            <LifeAndAnnuitySupplement>
+                <LifeSection>
+                    <InsuranceAmountItem>
+                        <TypeCode>CurrentModalPremium</TypeCode>
+                        <ContractAmountItem>
+                            <ItemAmount>8500.00</ItemAmount>
+                        </ContractAmountItem>
+                    </InsuranceAmountItem>
+                    <InsuranceAmountItem>
+                        <TypeCode>CurrentAnnualPremium</TypeCode>
+                        <ContractAmountItem>
+                            <ItemAmount currencyCode="INR">102000.00</ItemAmount>
+                        </ContractAmountItem>
+                    </InsuranceAmountItem>
+                    <InsuranceAmountItem>
+                        <TypeCode>Commission</TypeCode>
+                        <ContractAmountItem>
+                            <Commission>
+                                <CommissionBasisCode>Annual</CommissionBasisCode>
+                            </Commission>
+                        </ContractAmountItem>
+                    </InsuranceAmountItem>
+                    <InsuranceAmountItem>
+                        <TypeCode>NextPremiumAmountDue</TypeCode>
+                        <ContractAmountItem>
+                            <ItemAmount>8500.00</ItemAmount>
+                        </ContractAmountItem>
+                    </InsuranceAmountItem>
+                    <Coverage>
+                        <AssignedIdentifier>
+                            <RoleCode>Insurer</RoleCode>
+                            <Id>ULW3</Id>
+                            <IdentifierDescription>ComponentCodeUnderCommission</IdentifierDescription>
+                        </AssignedIdentifier>
+                        <TypeCode>Basic</TypeCode>
+                        <Description>Base Coverage</Description>
+                        <InsurancePeriod>
+                            <StartDate>2023-06-12</StartDate>
+                        </InsurancePeriod>
+                        <PremiumPeriod>
+                            <PeriodDuration>P7Y</PeriodDuration>
+                        </PremiumPeriod>
+                        <Limit>
+                            <LimitAmount>1020000.00</LimitAmount>
+                        </Limit>
+                        <InsuranceAmountItem>
+                            <TypeCode>Commission</TypeCode>
+                            <ContractAmountItem>
+                                <Commission>
+                                    <CommissionBasisCode>Annual</CommissionBasisCode>
+                                </Commission>
+                            </ContractAmountItem>
+                        </InsuranceAmountItem>
+                        <InsuranceAmountItem>
+                            <TypeCode>TotalPremium</TypeCode>
+                        </InsuranceAmountItem>
+                        <UnderwritingDecisionReasonDetail>
+                            <DecisionCategoryCode>Extra Med.Report(Standard)</DecisionCategoryCode>
+                        </UnderwritingDecisionReasonDetail>
+                    </Coverage>
+                </LifeSection>
+                <YearCount>1</YearCount>
+            </LifeAndAnnuitySupplement>
+            <TransactionReportDetail>
+                <TypeCode>Endorsement</TypeCode>
+                <TransactionPeriod>
+                    <StartDate>2023-06-12</StartDate>
+                </TransactionPeriod>
+                <ProcessDate>2023-06-12</ProcessDate>
+                <Description>New Approved Death Claim</Description>
+            </TransactionReportDetail>
+        </Policy>
+    </PolicySynchronization>
+</PolicySynchronizationProcess>

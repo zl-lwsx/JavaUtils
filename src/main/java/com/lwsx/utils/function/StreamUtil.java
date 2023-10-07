@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.assertEquals;
 
 public class StreamUtil {
     public static void main(String[] args) {
@@ -42,7 +41,6 @@ public class StreamUtil {
         Map<Boolean, Long> employeesByCity =
                 studentList.stream().collect(Collectors.groupingBy(StudentInfo::getGender, Collectors.counting()));
         System.out.println(employeesByCity);
-        assertEquals(employeesByCity.get(false).longValue(), 2L);
     }
 
     // 通过Comparator.thenComparing(Comparator<? super T> other) 实现多字段排序,并且使用Comparator.reverseOrder() 实现降序和升序
