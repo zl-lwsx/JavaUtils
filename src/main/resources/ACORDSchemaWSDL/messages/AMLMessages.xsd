@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:acord-doc="http://www.acord.org/schema/documentation/draft/Annotations/1"
+        xmlns="http://www.acord.org/schema/data/draft/ReusableDataComponents/1"
+        targetNamespace="http://www.acord.org/schema/data/draft/ReusableDataComponents/1" elementFormDefault="qualified"
+        attributeFormDefault="unqualified" version="1">
+    <xsd:annotation>
+        <xsd:appinfo>
+            <acord-doc:GenerationDateTime>9/7/2016</acord-doc:GenerationDateTime>
+        </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:include schemaLocation="../data/ReusableDataComponents.xsd"/>
+    <xsd:element name="PolicyCancellationClosingProcess" type="PolicyCancellationClosingProcess_Type"/>
+    <xsd:complexType name="PolicyCancellationClosingProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationClosingProcessResult" type="PolicyCancellationClosingProcessResult_Type"/>
+    <xsd:complexType name="PolicyCancellationClosingProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationOrderNotify" type="PolicyCancellationOrderNotify_Type"/>
+    <xsd:complexType name="PolicyCancellationOrderNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationOrderProcess" type="PolicyCancellationOrderProcess_Type"/>
+    <xsd:complexType name="PolicyCancellationOrderProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationOrderProcessResult" type="PolicyCancellationOrderProcessResult_Type"/>
+    <xsd:complexType name="PolicyCancellationOrderProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationQuotationNotify" type="PolicyCancellationQuotationNotify_Type"/>
+    <xsd:complexType name="PolicyCancellationQuotationNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationQuotationProcess" type="PolicyCancellationQuotationProcess_Type"/>
+    <xsd:complexType name="PolicyCancellationQuotationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyCancellationQuotationProcessResult" type="PolicyCancellationQuotationProcessResult_Type"/>
+    <xsd:complexType name="PolicyCancellationQuotationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementClosingProcess" type="PolicyEndorsementClosingProcess_Type"/>
+    <xsd:complexType name="PolicyEndorsementClosingProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementClosingProcessResult" type="PolicyEndorsementClosingProcessResult_Type"/>
+    <xsd:complexType name="PolicyEndorsementClosingProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementOrderNotify" type="PolicyEndorsementOrderNotify_Type"/>
+    <xsd:complexType name="PolicyEndorsementOrderNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementOrderProcess" type="PolicyEndorsementOrderProcess_Type"/>
+    <xsd:complexType name="PolicyEndorsementOrderProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementOrderProcessResult" type="PolicyEndorsementOrderProcessResult_Type"/>
+    <xsd:complexType name="PolicyEndorsementOrderProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementQuotationNotify" type="PolicyEndorsementQuotationNotify_Type"/>
+    <xsd:complexType name="PolicyEndorsementQuotationNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementQuotationProcess" type="PolicyEndorsementQuotationProcess_Type"/>
+    <xsd:complexType name="PolicyEndorsementQuotationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyEndorsementQuotationProcessResult" type="PolicyEndorsementQuotationProcessResult_Type"/>
+    <xsd:complexType name="PolicyEndorsementQuotationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessClosingProcess" type="PolicyNewBusinessClosingProcess_Type"/>
+    <xsd:complexType name="PolicyNewBusinessClosingProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessClosingProcessResult" type="PolicyNewBusinessClosingProcessResult_Type"/>
+    <xsd:complexType name="PolicyNewBusinessClosingProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessOrderNotify" type="PolicyNewBusinessOrderNotify_Type"/>
+    <xsd:complexType name="PolicyNewBusinessOrderNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessOrderProcess" type="PolicyNewBusinessOrderProcess_Type"/>
+    <xsd:complexType name="PolicyNewBusinessOrderProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessOrderProcessResult" type="PolicyNewBusinessOrderProcessResult_Type"/>
+    <xsd:complexType name="PolicyNewBusinessOrderProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessQuotationNotify" type="PolicyNewBusinessQuotationNotify_Type"/>
+    <xsd:complexType name="PolicyNewBusinessQuotationNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessQuotationProcess" type="PolicyNewBusinessQuotationProcess_Type"/>
+    <xsd:complexType name="PolicyNewBusinessQuotationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyNewBusinessQuotationProcessResult" type="PolicyNewBusinessQuotationProcessResult_Type"/>
+    <xsd:complexType name="PolicyNewBusinessQuotationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceClosingProcess"
+                 type="PolicyReinstatementReissuanceClosingProcess_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceClosingProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceClosingProcessResult"
+                 type="PolicyReinstatementReissuanceClosingProcessResult_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceClosingProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceOrderNotify" type="PolicyReinstatementReissuanceOrderNotify_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceOrderNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceOrderProcess"
+                 type="PolicyReinstatementReissuanceOrderProcess_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceOrderProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceOrderProcessResult"
+                 type="PolicyReinstatementReissuanceOrderProcessResult_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceOrderProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceQuotationNotify"
+                 type="PolicyReinstatementReissuanceQuotationNotify_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceQuotationNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceQuotationProcess"
+                 type="PolicyReinstatementReissuanceQuotationProcess_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceQuotationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyReinstatementReissuanceQuotationProcessResult"
+                 type="PolicyReinstatementReissuanceQuotationProcessResult_Type"/>
+    <xsd:complexType name="PolicyReinstatementReissuanceQuotationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalClosingProcess" type="PolicyRenewalClosingProcess_Type"/>
+    <xsd:complexType name="PolicyRenewalClosingProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalClosingProcessResult" type="PolicyRenewalClosingProcessResult_Type"/>
+    <xsd:complexType name="PolicyRenewalClosingProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyClosing" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalOrderNotify" type="PolicyRenewalOrderNotify_Type"/>
+    <xsd:complexType name="PolicyRenewalOrderNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalOrderProcess" type="PolicyRenewalOrderProcess_Type"/>
+    <xsd:complexType name="PolicyRenewalOrderProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalOrderProcessResult" type="PolicyRenewalOrderProcessResult_Type"/>
+    <xsd:complexType name="PolicyRenewalOrderProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyOrder" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalQuotationNotify" type="PolicyRenewalQuotationNotify_Type"/>
+    <xsd:complexType name="PolicyRenewalQuotationNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalQuotationProcess" type="PolicyRenewalQuotationProcess_Type"/>
+    <xsd:complexType name="PolicyRenewalQuotationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicyRenewalQuotationProcessResult" type="PolicyRenewalQuotationProcessResult_Type"/>
+    <xsd:complexType name="PolicyRenewalQuotationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicyQuotation" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicySynchronizationProcess" type="PolicySynchronizationProcess_Type"/>
+    <xsd:complexType name="PolicySynchronizationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicySynchronization" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PolicySynchronizationProcessResult" type="PolicySynchronizationProcessResult_Type"/>
+    <xsd:complexType name="PolicySynchronizationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PolicySynchronization" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimInquiryProcess" type="ClaimInquiryProcess_Type"/>
+    <xsd:complexType name="ClaimInquiryProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimInquiry" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimInquiryProcessResult" type="ClaimInquiryProcessResult_Type"/>
+    <xsd:complexType name="ClaimInquiryProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimInquiry" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimRegistrationProcess" type="ClaimRegistrationProcess_Type"/>
+    <xsd:complexType name="ClaimRegistrationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimRegistration" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimRegistrationProcessResult" type="ClaimRegistrationProcessResult_Type"/>
+    <xsd:complexType name="ClaimRegistrationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimRegistration" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimSynchronizationProcess" type="ClaimSynchronizationProcess_Type"/>
+    <xsd:complexType name="ClaimSynchronizationProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimSynchronization" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimSynchronizationProcessResult" type="ClaimSynchronizationProcessResult_Type"/>
+    <xsd:complexType name="ClaimSynchronizationProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimSynchronization" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="AccountCurrentNotify" type="AccountCurrentNotify_Type"/>
+    <xsd:complexType name="AccountCurrentNotify_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="AccountCurrent" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="AccountCurrentProcess" type="AccountCurrentProcess_Type"/>
+    <xsd:complexType name="AccountCurrentProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="AccountCurrent" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="AccountCurrentProcessResult" type="AccountCurrentProcessResult_Type"/>
+    <xsd:complexType name="AccountCurrentProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="AccountCurrent" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimBordereauxProcess" type="ClaimBordereauxProcess_Type"/>
+    <xsd:complexType name="ClaimBordereauxProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimBordereaux" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ClaimBordereauxProcessResult" type="ClaimBordereauxProcessResult_Type"/>
+    <xsd:complexType name="ClaimBordereauxProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="ClaimBordereaux" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PremiumBordereauxProcess" type="PremiumBordereauxProcess_Type"/>
+    <xsd:complexType name="PremiumBordereauxProcess_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessage_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PremiumBordereaux" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PremiumBordereauxProcessResult" type="PremiumBordereauxProcessResult_Type"/>
+    <xsd:complexType name="PremiumBordereauxProcessResult_Type">
+        <xsd:complexContent>
+            <xsd:extension base="ACORDMessageResult_Type">
+                <xsd:sequence>
+                    <xsd:element ref="PremiumBordereaux" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>
