@@ -1,7 +1,9 @@
 package com.lwsx.utils.xml;
 
+import com.lwsx.utils.function.StudentInfo;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
 import lombok.SneakyThrows;
 import org.acord.schema.data.draft.reusabledatacomponents._1.PolicySynchronizationProcessType;
@@ -34,6 +36,17 @@ public class JAXBTest {
         PolicySynchronizationType policySynchronizationType = policySynchronizationTypeList.get(0);
         String providerCode = policySynchronizationType.getOrganization().get(0).getExternalIdentifier().get(0).getId();
         System.out.println(providerCode);
+
+        /**
+         * xml 转 xsd
+         */
+
+        Marshaller marshaller = jaxbContext.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
+        StudentInfo studentInfo = new StudentInfo();
+        studentInfo.setAge(33);
+        studentInfo.setName("lwsx");
+        marshaller.marshal(studentInfo, System.out);
     }
 
     /**

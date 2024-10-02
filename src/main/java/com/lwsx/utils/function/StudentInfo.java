@@ -1,5 +1,8 @@
 package com.lwsx.utils.function;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,7 +23,7 @@ public class StudentInfo implements Comparable<StudentInfo> {
     //出生日期
     private LocalDate birthday;
 
-    public StudentInfo(){
+    public StudentInfo() {
 
     }
 

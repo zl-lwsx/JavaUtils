@@ -86,5 +86,6 @@ public class OptionalTest {
         // isPresent判断值是否存在
         System.out.println(optional1.isPresent() == true);
         System.out.println(optional2.isPresent() == false);
+        System.out.printf("ddd", optional1);
     }
 }
